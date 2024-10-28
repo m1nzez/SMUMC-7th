@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97AA4B5E2CCF99180004F9F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AA4B5D2CCF99180004F9F3 /* AppDelegate.swift */; };
+		97AA4B602CCF99180004F9F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AA4B5F2CCF99180004F9F3 /* SceneDelegate.swift */; };
+		97AA4B622CCF99180004F9F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AA4B612CCF99180004F9F3 /* ViewController.swift */; };
+		97AA4B672CCF99190004F9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97AA4B662CCF99190004F9F3 /* Assets.xcassets */; };
+		97AA4B752CCF99190004F9F3 /* Kream_CloneCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AA4B742CCF99190004F9F3 /* Kream_CloneCodingTests.swift */; };
+		97AA4B7F2CCF99190004F9F3 /* Kream_CloneCodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AA4B7E2CCF99190004F9F3 /* Kream_CloneCodingUITests.swift */; };
+		97AA4B812CCF99190004F9F3 /* Kream_CloneCodingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AA4B802CCF99190004F9F3 /* Kream_CloneCodingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97AA4B712CCF99190004F9F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97AA4B522CCF99180004F9F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97AA4B592CCF99180004F9F3;
+			remoteInfo = Kream_CloneCoding;
+		};
+		97AA4B7B2CCF99190004F9F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97AA4B522CCF99180004F9F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97AA4B592CCF99180004F9F3;
+			remoteInfo = Kream_CloneCoding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97AA4B5A2CCF99180004F9F3 /* Kream_CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kream_CloneCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97AA4B5D2CCF99180004F9F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97AA4B5F2CCF99180004F9F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		97AA4B612CCF99180004F9F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97AA4B662CCF99190004F9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97AA4B6B2CCF99190004F9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97AA4B702CCF99190004F9F3 /* Kream_CloneCodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kream_CloneCodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97AA4B742CCF99190004F9F3 /* Kream_CloneCodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_CloneCodingTests.swift; sourceTree = "<group>"; };
+		97AA4B7A2CCF99190004F9F3 /* Kream_CloneCodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kream_CloneCodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97AA4B7E2CCF99190004F9F3 /* Kream_CloneCodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_CloneCodingUITests.swift; sourceTree = "<group>"; };
+		97AA4B802CCF99190004F9F3 /* Kream_CloneCodingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_CloneCodingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97AA4B572CCF99180004F9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97AA4B6D2CCF99190004F9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97AA4B772CCF99190004F9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97AA4B512CCF99180004F9F3 = {
+			isa = PBXGroup;
+			children = (
+				97AA4B5C2CCF99180004F9F3 /* Kream_CloneCoding */,
+				97AA4B732CCF99190004F9F3 /* Kream_CloneCodingTests */,
+				97AA4B7D2CCF99190004F9F3 /* Kream_CloneCodingUITests */,
+				97AA4B5B2CCF99180004F9F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97AA4B5B2CCF99180004F9F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97AA4B5A2CCF99180004F9F3 /* Kream_CloneCoding.app */,
+				97AA4B702CCF99190004F9F3 /* Kream_CloneCodingTests.xctest */,
+				97AA4B7A2CCF99190004F9F3 /* Kream_CloneCodingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97AA4B5C2CCF99180004F9F3 /* Kream_CloneCoding */ = {
+			isa = PBXGroup;
+			children = (
+				97AA4B5D2CCF99180004F9F3 /* AppDelegate.swift */,
+				97AA4B5F2CCF99180004F9F3 /* SceneDelegate.swift */,
+				97AA4B612CCF99180004F9F3 /* ViewController.swift */,
+				97AA4B662CCF99190004F9F3 /* Assets.xcassets */,
+				97AA4B6B2CCF99190004F9F3 /* Info.plist */,
+			);
+			path = Kream_CloneCoding;
+			sourceTree = "<group>";
+		};
+		97AA4B732CCF99190004F9F3 /* Kream_CloneCodingTests */ = {
+			isa = PBXGroup;
+			children = (
+				97AA4B742CCF99190004F9F3 /* Kream_CloneCodingTests.swift */,
+			);
+			path = Kream_CloneCodingTests;
+			sourceTree = "<group>";
+		};
+		97AA4B7D2CCF99190004F9F3 /* Kream_CloneCodingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97AA4B7E2CCF99190004F9F3 /* Kream_CloneCodingUITests.swift */,
+				97AA4B802CCF99190004F9F3 /* Kream_CloneCodingUITestsLaunchTests.swift */,
+			);
+			path = Kream_CloneCodingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97AA4B592CCF99180004F9F3 /* Kream_CloneCoding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97AA4B842CCF99190004F9F3 /* Build configuration list for PBXNativeTarget "Kream_CloneCoding" */;
+			buildPhases = (
+				97AA4B562CCF99180004F9F3 /* Sources */,
+				97AA4B572CCF99180004F9F3 /* Frameworks */,
+				97AA4B582CCF99180004F9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kream_CloneCoding;
+			productName = Kream_CloneCoding;
+			productReference = 97AA4B5A2CCF99180004F9F3 /* Kream_CloneCoding.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97AA4B6F2CCF99190004F9F3 /* Kream_CloneCodingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97AA4B872CCF99190004F9F3 /* Build configuration list for PBXNativeTarget "Kream_CloneCodingTests" */;
+			buildPhases = (
+				97AA4B6C2CCF99190004F9F3 /* Sources */,
+				97AA4B6D2CCF99190004F9F3 /* Frameworks */,
+				97AA4B6E2CCF99190004F9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97AA4B722CCF99190004F9F3 /* PBXTargetDependency */,
+			);
+			name = Kream_CloneCodingTests;
+			productName = Kream_CloneCodingTests;
+			productReference = 97AA4B702CCF99190004F9F3 /* Kream_CloneCodingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		97AA4B792CCF99190004F9F3 /* Kream_CloneCodingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97AA4B8A2CCF99190004F9F3 /* Build configuration list for PBXNativeTarget "Kream_CloneCodingUITests" */;
+			buildPhases = (
+				97AA4B762CCF99190004F9F3 /* Sources */,
+				97AA4B772CCF99190004F9F3 /* Frameworks */,
+				97AA4B782CCF99190004F9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97AA4B7C2CCF99190004F9F3 /* PBXTargetDependency */,
+			);
+			name = Kream_CloneCodingUITests;
+			productName = Kream_CloneCodingUITests;
+			productReference = 97AA4B7A2CCF99190004F9F3 /* Kream_CloneCodingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97AA4B522CCF99180004F9F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					97AA4B592CCF99180004F9F3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					97AA4B6F2CCF99190004F9F3 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 97AA4B592CCF99180004F9F3;
+					};
+					97AA4B792CCF99190004F9F3 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 97AA4B592CCF99180004F9F3;
+					};
+				};
+			};
+			buildConfigurationList = 97AA4B552CCF99180004F9F3 /* Build configuration list for PBXProject "Kream_CloneCoding" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97AA4B512CCF99180004F9F3;
+			productRefGroup = 97AA4B5B2CCF99180004F9F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97AA4B592CCF99180004F9F3 /* Kream_CloneCoding */,
+				97AA4B6F2CCF99190004F9F3 /* Kream_CloneCodingTests */,
+				97AA4B792CCF99190004F9F3 /* Kream_CloneCodingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97AA4B582CCF99180004F9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AA4B672CCF99190004F9F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97AA4B6E2CCF99190004F9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97AA4B782CCF99190004F9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97AA4B562CCF99180004F9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AA4B622CCF99180004F9F3 /* ViewController.swift in Sources */,
+				97AA4B5E2CCF99180004F9F3 /* AppDelegate.swift in Sources */,
+				97AA4B602CCF99180004F9F3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97AA4B6C2CCF99190004F9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AA4B752CCF99190004F9F3 /* Kream_CloneCodingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97AA4B762CCF99190004F9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97AA4B7F2CCF99190004F9F3 /* Kream_CloneCodingUITests.swift in Sources */,
+				97AA4B812CCF99190004F9F3 /* Kream_CloneCodingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97AA4B722CCF99190004F9F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97AA4B592CCF99180004F9F3 /* Kream_CloneCoding */;
+			targetProxy = 97AA4B712CCF99190004F9F3 /* PBXContainerItemProxy */;
+		};
+		97AA4B7C2CCF99190004F9F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97AA4B592CCF99180004F9F3 /* Kream_CloneCoding */;
+			targetProxy = 97AA4B7B2CCF99190004F9F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		97AA4B822CCF99190004F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		97AA4B832CCF99190004F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97AA4B852CCF99190004F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kream_CloneCoding/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCoding";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97AA4B862CCF99190004F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kream_CloneCoding/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCoding";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		97AA4B882CCF99190004F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCodingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kream_CloneCoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kream_CloneCoding";
+			};
+			name = Debug;
+		};
+		97AA4B892CCF99190004F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCodingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kream_CloneCoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kream_CloneCoding";
+			};
+			name = Release;
+		};
+		97AA4B8B2CCF99190004F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCodingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kream_CloneCoding;
+			};
+			name = Debug;
+		};
+		97AA4B8C2CCF99190004F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCodingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kream_CloneCoding;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97AA4B552CCF99180004F9F3 /* Build configuration list for PBXProject "Kream_CloneCoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AA4B822CCF99190004F9F3 /* Debug */,
+				97AA4B832CCF99190004F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97AA4B842CCF99190004F9F3 /* Build configuration list for PBXNativeTarget "Kream_CloneCoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AA4B852CCF99190004F9F3 /* Debug */,
+				97AA4B862CCF99190004F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97AA4B872CCF99190004F9F3 /* Build configuration list for PBXNativeTarget "Kream_CloneCodingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AA4B882CCF99190004F9F3 /* Debug */,
+				97AA4B892CCF99190004F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97AA4B8A2CCF99190004F9F3 /* Build configuration list for PBXNativeTarget "Kream_CloneCodingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97AA4B8B2CCF99190004F9F3 /* Debug */,
+				97AA4B8C2CCF99190004F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97AA4B522CCF99180004F9F3 /* Project object */;
+}
