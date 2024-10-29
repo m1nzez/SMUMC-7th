@@ -1,13 +1,13 @@
 //
-//  Kream_CloneCodingUITestsLaunchTests.swift
-//  Kream_CloneCodingUITests
+//  Kream_cloneCodingUITestsLaunchTests.swift
+//  Kream_cloneCodingUITests
 //
 //  Created by 김민지 on 10/28/24.
 //
 
 import XCTest
 
-final class Kream_CloneCodingUITestsLaunchTests: XCTestCase {
+final class Kream_cloneCodingUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

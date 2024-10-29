@@ -1,13 +1,13 @@
 //
-//  Kream_CloneCodingUITests.swift
-//  Kream_CloneCodingUITests
+//  Kream_cloneCodingUITests.swift
+//  Kream_cloneCodingUITests
 //
 //  Created by 김민지 on 10/28/24.
 //
 
 import XCTest
 
-final class Kream_CloneCodingUITests: XCTestCase {
+final class Kream_cloneCodingUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

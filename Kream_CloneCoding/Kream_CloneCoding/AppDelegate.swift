@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Kream_CloneCoding
+//  Kream_cloneCoding
 //
 //  Created by 김민지 on 10/28/24.
 //

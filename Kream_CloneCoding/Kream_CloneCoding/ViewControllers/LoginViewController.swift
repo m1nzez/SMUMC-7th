@@ -1,41 +1,69 @@
+//
+//  ViewController.swift
+//  Kream
+//
+//  Created by 이승준 on 9/23/24.
+//
+
 import UIKit
 
 class LoginViewController: UIViewController {
     
-    private let userInfoModel = UserInfoModel() //모델이랑 연결해주기
+    private let userDefaults = UserDefaults.standard
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view = loginview
-        loginButtonTap()
-    }
-
-    //loginview 연결시켜주기
-    private lazy var loginview: LoginView = {
+    private lazy var loginView: LoginView = {
         let view = LoginView()
-        view.loginButton.addTarget(self, action: #selector(loginButtonTap), for: .touchUpInside)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.appleLoginButton.addTarget(self, action: #selector(appleLoginTapped), for: .touchUpInside)
+        view.kakaoLoginButton.addTarget(self, action: #selector(kakaoLoginTapped), for: .touchUpInside)
+        view.loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
         return view
     }()
     
+    private let navigationVC = UINavigationController(rootViewController: TabBarViewController())
     
-    // 버튼 누르면 화면 전환
-    @objc
-    func loginButtonTap() {
-        let viewController = BaseViewController()
-        viewController.modalPresentationStyle = .fullScreen
-        present(viewController, animated: true)
-        
-        //버튼 이메일, 패스워드 저장
-        guard let email = loginview.emailTextField.text, !email.isEmpty else { return }
-        guard let password = loginview.passwordTextField.text, !password.isEmpty else { return }
-        
-        //모델을 통해 텍스트 저장
-        userInfoModel.saveEmail(email)
-        userInfoModel.savePassword(password)
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.loadUserdefaults()
+        self.view = loginView
     }
+    
+    @objc
+    private func loginTapped() {
+        self.saveUserDefaults()
+        let tabBarVC = TabBarViewController()
+        tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC,animated: true)
+    }
+    
+    private func saveUserDefaults() {
+        guard let email = loginView.emailTextField.text, let pwd = loginView.pwdTextField.text, email != "", pwd != "" else {
+            print("내용을 입력해 주세요.")
+            return
+        }
         
+        userDefaults.set(email, forKey: "user_email")
+        userDefaults.set(pwd, forKey: "user_pwd")
+    }
+    
+    private func loadUserdefaults() {
+        guard let email = userDefaults.string(forKey: "user_email"),
+              let pwd = userDefaults.string(forKey: "user_pwd") else {
+            print("There is no Value for user_email, user_pwd")
+            return
+        }
+        loginView.emailTextField.text = email
+        loginView.pwdTextField.text = pwd
+    }
+    
+    @objc
+    private func appleLoginTapped() {
+        print("appleLoginTapped")
+    }
+    
+    @objc
+    private func kakaoLoginTapped() {
+        print("kakaoLoginTapped")
+    }
+    
 }
-    
-    
-

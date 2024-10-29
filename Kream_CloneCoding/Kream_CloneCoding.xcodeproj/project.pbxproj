@@ -7,94 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97F156342CCFA18300EBF51D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156332CCFA18300EBF51D /* AppDelegate.swift */; };
-		97F156362CCFA18300EBF51D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156352CCFA18300EBF51D /* SceneDelegate.swift */; };
-		97F1564B2CCFA18300EBF51D /* Kream_CloneCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1564A2CCFA18300EBF51D /* Kream_CloneCodingTests.swift */; };
-		97F156552CCFA18300EBF51D /* Kream_CloneCodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156542CCFA18300EBF51D /* Kream_CloneCodingUITests.swift */; };
-		97F156572CCFA18300EBF51D /* Kream_CloneCodingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156562CCFA18300EBF51D /* Kream_CloneCodingUITestsLaunchTests.swift */; };
-		97F1568D2CCFA35100EBF51D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97F1568C2CCFA35100EBF51D /* SnapKit */; };
-		97F156902CCFA44900EBF51D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F1568F2CCFA44900EBF51D /* Assets.xcassets */; };
-		97F156942CCFA45400EBF51D /* SavedProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156912CCFA45400EBF51D /* SavedProduct.swift */; };
-		97F156952CCFA45400EBF51D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156922CCFA45400EBF51D /* UserInfo.swift */; };
-		97F156AD2CCFA46300EBF51D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156962CCFA46300EBF51D /* HomeViewController.swift */; };
-		97F156AE2CCFA46300EBF51D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156982CCFA46300EBF51D /* LoginView.swift */; };
-		97F156AF2CCFA46300EBF51D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156992CCFA46300EBF51D /* LoginViewController.swift */; };
-		97F156B02CCFA46300EBF51D /* MyPageManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1569B2CCFA46300EBF51D /* MyPageManageViewController.swift */; };
-		97F156B12CCFA46300EBF51D /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1569C2CCFA46300EBF51D /* MyPageViewController.swift */; };
-		97F156B22CCFA46300EBF51D /* MyPageTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1569E2CCFA46300EBF51D /* MyPageTopView.swift */; };
-		97F156B32CCFA46300EBF51D /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1569F2CCFA46300EBF51D /* MyPageView.swift */; };
-		97F156B42CCFA46300EBF51D /* ProfileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156A02CCFA46300EBF51D /* ProfileManagerView.swift */; };
-		97F156B52CCFA46300EBF51D /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156A32CCFA46300EBF51D /* SavedTableViewCell.swift */; };
-		97F156B62CCFA46300EBF51D /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156A42CCFA46300EBF51D /* SavedView.swift */; };
-		97F156B72CCFA46300EBF51D /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156A62CCFA46300EBF51D /* SavedViewController.swift */; };
-		97F156B82CCFA46300EBF51D /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156A82CCFA46300EBF51D /* ShopViewController.swift */; };
-		97F156B92CCFA46300EBF51D /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156AA2CCFA46300EBF51D /* StyleViewController.swift */; };
-		97F156BB2CCFA4CA00EBF51D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F156BA2CCFA4CA00EBF51D /* MainTabBarController.swift */; };
+		97BC67492CCFBAD100FEB356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67482CCFBAD100FEB356 /* AppDelegate.swift */; };
+		97BC674B2CCFBAD100FEB356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC674A2CCFBAD100FEB356 /* SceneDelegate.swift */; };
+		97BC67602CCFBAD100FEB356 /* Kream_cloneCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC675F2CCFBAD100FEB356 /* Kream_cloneCodingTests.swift */; };
+		97BC676A2CCFBAD100FEB356 /* Kream_cloneCodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67692CCFBAD100FEB356 /* Kream_cloneCodingUITests.swift */; };
+		97BC676C2CCFBAD100FEB356 /* Kream_cloneCodingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC676B2CCFBAD100FEB356 /* Kream_cloneCodingUITestsLaunchTests.swift */; };
+		97BC677E2CCFBB4A00FEB356 /* HomeCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC677A2CCFBB4A00FEB356 /* HomeCategoryModel.swift */; };
+		97BC677F2CCFBB4A00FEB356 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC677B2CCFBB4A00FEB356 /* LoginModel.swift */; };
+		97BC67802CCFBB4A00FEB356 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC677C2CCFBB4A00FEB356 /* Product.swift */; };
+		97BC67962CCFBB5200FEB356 /* HomeCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67812CCFBB5200FEB356 /* HomeCategoryCollectionViewCell.swift */; };
+		97BC67972CCFBB5200FEB356 /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67822CCFBB5200FEB356 /* SavedTableViewCell.swift */; };
+		97BC67A02CCFBB5200FEB356 /* EditMyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC678E2CCFBB5200FEB356 /* EditMyProfileView.swift */; };
+		97BC67A12CCFBB5200FEB356 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC678F2CCFBB5200FEB356 /* HomeView.swift */; };
+		97BC67A22CCFBB5200FEB356 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67902CCFBB5200FEB356 /* LoginView.swift */; };
+		97BC67A32CCFBB5200FEB356 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67912CCFBB5200FEB356 /* MyProfileView.swift */; };
+		97BC67A42CCFBB5200FEB356 /* QuickLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67922CCFBB5200FEB356 /* QuickLoginButton.swift */; };
+		97BC67A52CCFBB5200FEB356 /* SavedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67932CCFBB5200FEB356 /* SavedTableView.swift */; };
+		97BC67BB2CCFBC0400FEB356 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97BC67BA2CCFBC0400FEB356 /* SnapKit */; };
+		97BC67C62CCFBD1E00FEB356 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67BC2CCFBD1E00FEB356 /* ShopViewController.swift */; };
+		97BC67C72CCFBD1E00FEB356 /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67BD2CCFBD1E00FEB356 /* StyleViewController.swift */; };
+		97BC67C82CCFBD1E00FEB356 /* EditMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67BF2CCFBD1E00FEB356 /* EditMyProfileViewController.swift */; };
+		97BC67C92CCFBD1E00FEB356 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67C02CCFBD1E00FEB356 /* HomeViewController.swift */; };
+		97BC67CA2CCFBD1E00FEB356 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67C12CCFBD1E00FEB356 /* LoginViewController.swift */; };
+		97BC67CB2CCFBD1E00FEB356 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67C22CCFBD1E00FEB356 /* MyProfileViewController.swift */; };
+		97BC67CC2CCFBD1E00FEB356 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67C32CCFBD1E00FEB356 /* SavedViewController.swift */; };
+		97BC67CD2CCFBD1E00FEB356 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67C42CCFBD1E00FEB356 /* TabBarViewController.swift */; };
+		97BC67CF2CCFBD5100FEB356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97BC67CE2CCFBD5100FEB356 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		97F156472CCFA18300EBF51D /* PBXContainerItemProxy */ = {
+		97BC675C2CCFBAD100FEB356 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 97F156282CCFA18300EBF51D /* Project object */;
+			containerPortal = 97BC673D2CCFBAD100FEB356 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 97F1562F2CCFA18300EBF51D;
-			remoteInfo = Kream_CloneCoding;
+			remoteGlobalIDString = 97BC67442CCFBAD100FEB356;
+			remoteInfo = Kream_cloneCoding;
 		};
-		97F156512CCFA18300EBF51D /* PBXContainerItemProxy */ = {
+		97BC67662CCFBAD100FEB356 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 97F156282CCFA18300EBF51D /* Project object */;
+			containerPortal = 97BC673D2CCFBAD100FEB356 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 97F1562F2CCFA18300EBF51D;
-			remoteInfo = Kream_CloneCoding;
+			remoteGlobalIDString = 97BC67442CCFBAD100FEB356;
+			remoteInfo = Kream_cloneCoding;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		97F156302CCFA18300EBF51D /* Kream_CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kream_CloneCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		97F156332CCFA18300EBF51D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97F156352CCFA18300EBF51D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		97F156412CCFA18300EBF51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97F156462CCFA18300EBF51D /* Kream_CloneCodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kream_CloneCodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97F1564A2CCFA18300EBF51D /* Kream_CloneCodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_CloneCodingTests.swift; sourceTree = "<group>"; };
-		97F156502CCFA18300EBF51D /* Kream_CloneCodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kream_CloneCodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		97F156542CCFA18300EBF51D /* Kream_CloneCodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_CloneCodingUITests.swift; sourceTree = "<group>"; };
-		97F156562CCFA18300EBF51D /* Kream_CloneCodingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_CloneCodingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		97F1568F2CCFA44900EBF51D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		97F156912CCFA45400EBF51D /* SavedProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedProduct.swift; sourceTree = "<group>"; };
-		97F156922CCFA45400EBF51D /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		97F156962CCFA46300EBF51D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		97F156982CCFA46300EBF51D /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		97F156992CCFA46300EBF51D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		97F1569B2CCFA46300EBF51D /* MyPageManageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageManageViewController.swift; sourceTree = "<group>"; };
-		97F1569C2CCFA46300EBF51D /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
-		97F1569E2CCFA46300EBF51D /* MyPageTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageTopView.swift; sourceTree = "<group>"; };
-		97F1569F2CCFA46300EBF51D /* MyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
-		97F156A02CCFA46300EBF51D /* ProfileManagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileManagerView.swift; sourceTree = "<group>"; };
-		97F156A32CCFA46300EBF51D /* SavedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
-		97F156A42CCFA46300EBF51D /* SavedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
-		97F156A62CCFA46300EBF51D /* SavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
-		97F156A82CCFA46300EBF51D /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
-		97F156AA2CCFA46300EBF51D /* StyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
-		97F156BA2CCFA4CA00EBF51D /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		97BC67452CCFBAD100FEB356 /* Kream_cloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kream_cloneCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BC67482CCFBAD100FEB356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97BC674A2CCFBAD100FEB356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		97BC67562CCFBAD100FEB356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BC675B2CCFBAD100FEB356 /* Kream_cloneCodingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kream_cloneCodingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BC675F2CCFBAD100FEB356 /* Kream_cloneCodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_cloneCodingTests.swift; sourceTree = "<group>"; };
+		97BC67652CCFBAD100FEB356 /* Kream_cloneCodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kream_cloneCodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BC67692CCFBAD100FEB356 /* Kream_cloneCodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_cloneCodingUITests.swift; sourceTree = "<group>"; };
+		97BC676B2CCFBAD100FEB356 /* Kream_cloneCodingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kream_cloneCodingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		97BC677A2CCFBB4A00FEB356 /* HomeCategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryModel.swift; sourceTree = "<group>"; };
+		97BC677B2CCFBB4A00FEB356 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		97BC677C2CCFBB4A00FEB356 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		97BC67812CCFBB5200FEB356 /* HomeCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		97BC67822CCFBB5200FEB356 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
+		97BC678E2CCFBB5200FEB356 /* EditMyProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMyProfileView.swift; sourceTree = "<group>"; };
+		97BC678F2CCFBB5200FEB356 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		97BC67902CCFBB5200FEB356 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		97BC67912CCFBB5200FEB356 /* MyProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
+		97BC67922CCFBB5200FEB356 /* QuickLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickLoginButton.swift; sourceTree = "<group>"; };
+		97BC67932CCFBB5200FEB356 /* SavedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTableView.swift; sourceTree = "<group>"; };
+		97BC67BC2CCFBD1E00FEB356 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		97BC67BD2CCFBD1E00FEB356 /* StyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
+		97BC67BF2CCFBD1E00FEB356 /* EditMyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMyProfileViewController.swift; sourceTree = "<group>"; };
+		97BC67C02CCFBD1E00FEB356 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		97BC67C12CCFBD1E00FEB356 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		97BC67C22CCFBD1E00FEB356 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		97BC67C32CCFBD1E00FEB356 /* SavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		97BC67C42CCFBD1E00FEB356 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		97BC67CE2CCFBD5100FEB356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		97F1562D2CCFA18300EBF51D /* Frameworks */ = {
+		97BC67422CCFBAD100FEB356 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F1568D2CCFA35100EBF51D /* SnapKit in Frameworks */,
+				97BC67BB2CCFBC0400FEB356 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97F156432CCFA18300EBF51D /* Frameworks */ = {
+		97BC67582CCFBAD100FEB356 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97F1564D2CCFA18300EBF51D /* Frameworks */ = {
+		97BC67622CCFBAD100FEB356 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -104,242 +110,196 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		97F156272CCFA18300EBF51D = {
+		97BC673C2CCFBAD100FEB356 = {
 			isa = PBXGroup;
 			children = (
-				97F156322CCFA18300EBF51D /* Kream_CloneCoding */,
-				97F156492CCFA18300EBF51D /* Kream_CloneCodingTests */,
-				97F156532CCFA18300EBF51D /* Kream_CloneCodingUITests */,
-				97F156312CCFA18300EBF51D /* Products */,
+				97BC67472CCFBAD100FEB356 /* Kream_cloneCoding */,
+				97BC67CE2CCFBD5100FEB356 /* Assets.xcassets */,
+				97BC675E2CCFBAD100FEB356 /* Kream_cloneCodingTests */,
+				97BC67682CCFBAD100FEB356 /* Kream_cloneCodingUITests */,
+				97BC67462CCFBAD100FEB356 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		97F156312CCFA18300EBF51D /* Products */ = {
+		97BC67462CCFBAD100FEB356 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				97F156302CCFA18300EBF51D /* Kream_CloneCoding.app */,
-				97F156462CCFA18300EBF51D /* Kream_CloneCodingTests.xctest */,
-				97F156502CCFA18300EBF51D /* Kream_CloneCodingUITests.xctest */,
+				97BC67452CCFBAD100FEB356 /* Kream_cloneCoding.app */,
+				97BC675B2CCFBAD100FEB356 /* Kream_cloneCodingTests.xctest */,
+				97BC67652CCFBAD100FEB356 /* Kream_cloneCodingUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97F156322CCFA18300EBF51D /* Kream_CloneCoding */ = {
+		97BC67472CCFBAD100FEB356 /* Kream_cloneCoding */ = {
 			isa = PBXGroup;
 			children = (
-				97F156332CCFA18300EBF51D /* AppDelegate.swift */,
-				97F156352CCFA18300EBF51D /* SceneDelegate.swift */,
-				97F156BA2CCFA4CA00EBF51D /* MainTabBarController.swift */,
-				97F156AC2CCFA46300EBF51D /* Presentation */,
-				97F156932CCFA45400EBF51D /* Models */,
-				97F1568F2CCFA44900EBF51D /* Assets.xcassets */,
-				97F156412CCFA18300EBF51D /* Info.plist */,
+				97BC67482CCFBAD100FEB356 /* AppDelegate.swift */,
+				97BC674A2CCFBAD100FEB356 /* SceneDelegate.swift */,
+				97BC677D2CCFBB4A00FEB356 /* Models */,
+				97BC67952CCFBB5200FEB356 /* Views */,
+				97BC67C52CCFBD1E00FEB356 /* ViewControllers */,
+				97BC67562CCFBAD100FEB356 /* Info.plist */,
 			);
-			path = Kream_CloneCoding;
+			path = Kream_cloneCoding;
 			sourceTree = "<group>";
 		};
-		97F156492CCFA18300EBF51D /* Kream_CloneCodingTests */ = {
+		97BC675E2CCFBAD100FEB356 /* Kream_cloneCodingTests */ = {
 			isa = PBXGroup;
 			children = (
-				97F1564A2CCFA18300EBF51D /* Kream_CloneCodingTests.swift */,
+				97BC675F2CCFBAD100FEB356 /* Kream_cloneCodingTests.swift */,
 			);
-			path = Kream_CloneCodingTests;
+			path = Kream_cloneCodingTests;
 			sourceTree = "<group>";
 		};
-		97F156532CCFA18300EBF51D /* Kream_CloneCodingUITests */ = {
+		97BC67682CCFBAD100FEB356 /* Kream_cloneCodingUITests */ = {
 			isa = PBXGroup;
 			children = (
-				97F156542CCFA18300EBF51D /* Kream_CloneCodingUITests.swift */,
-				97F156562CCFA18300EBF51D /* Kream_CloneCodingUITestsLaunchTests.swift */,
+				97BC67692CCFBAD100FEB356 /* Kream_cloneCodingUITests.swift */,
+				97BC676B2CCFBAD100FEB356 /* Kream_cloneCodingUITestsLaunchTests.swift */,
 			);
-			path = Kream_CloneCodingUITests;
+			path = Kream_cloneCodingUITests;
 			sourceTree = "<group>";
 		};
-		97F156932CCFA45400EBF51D /* Models */ = {
+		97BC677D2CCFBB4A00FEB356 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				97F156912CCFA45400EBF51D /* SavedProduct.swift */,
-				97F156922CCFA45400EBF51D /* UserInfo.swift */,
+				97BC677A2CCFBB4A00FEB356 /* HomeCategoryModel.swift */,
+				97BC677B2CCFBB4A00FEB356 /* LoginModel.swift */,
+				97BC677C2CCFBB4A00FEB356 /* Product.swift */,
 			);
-			name = Models;
-			path = ../../../UMC_KREAM_Reference/UMC_KREAM/UMC_KREAM/Data/Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		97F156972CCFA46300EBF51D /* Home */ = {
+		97BC67832CCFBB5200FEB356 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				97F156962CCFA46300EBF51D /* HomeViewController.swift */,
+				97BC67812CCFBB5200FEB356 /* HomeCategoryCollectionViewCell.swift */,
+				97BC67822CCFBB5200FEB356 /* SavedTableViewCell.swift */,
 			);
-			path = Home;
+			path = Cells;
 			sourceTree = "<group>";
 		};
-		97F1569A2CCFA46300EBF51D /* Login */ = {
+		97BC67952CCFBB5200FEB356 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				97F156982CCFA46300EBF51D /* LoginView.swift */,
-				97F156992CCFA46300EBF51D /* LoginViewController.swift */,
+				97BC67832CCFBB5200FEB356 /* Cells */,
+				97BC678E2CCFBB5200FEB356 /* EditMyProfileView.swift */,
+				97BC678F2CCFBB5200FEB356 /* HomeView.swift */,
+				97BC67902CCFBB5200FEB356 /* LoginView.swift */,
+				97BC67912CCFBB5200FEB356 /* MyProfileView.swift */,
+				97BC67922CCFBB5200FEB356 /* QuickLoginButton.swift */,
+				97BC67932CCFBB5200FEB356 /* SavedTableView.swift */,
 			);
-			path = Login;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		97F1569D2CCFA46300EBF51D /* ViewControllers */ = {
+		97BC67BE2CCFBD1E00FEB356 /* Later */ = {
 			isa = PBXGroup;
 			children = (
-				97F1569B2CCFA46300EBF51D /* MyPageManageViewController.swift */,
-				97F1569C2CCFA46300EBF51D /* MyPageViewController.swift */,
+				97BC67BC2CCFBD1E00FEB356 /* ShopViewController.swift */,
+				97BC67BD2CCFBD1E00FEB356 /* StyleViewController.swift */,
+			);
+			path = Later;
+			sourceTree = "<group>";
+		};
+		97BC67C52CCFBD1E00FEB356 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				97BC67C42CCFBD1E00FEB356 /* TabBarViewController.swift */,
+				97BC67C12CCFBD1E00FEB356 /* LoginViewController.swift */,
+				97BC67C02CCFBD1E00FEB356 /* HomeViewController.swift */,
+				97BC67C32CCFBD1E00FEB356 /* SavedViewController.swift */,
+				97BC67C22CCFBD1E00FEB356 /* MyProfileViewController.swift */,
+				97BC67BF2CCFBD1E00FEB356 /* EditMyProfileViewController.swift */,
+				97BC67BE2CCFBD1E00FEB356 /* Later */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		97F156A12CCFA46300EBF51D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				97F1569E2CCFA46300EBF51D /* MyPageTopView.swift */,
-				97F1569F2CCFA46300EBF51D /* MyPageView.swift */,
-				97F156A02CCFA46300EBF51D /* ProfileManagerView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		97F156A22CCFA46300EBF51D /* My */ = {
-			isa = PBXGroup;
-			children = (
-				97F1569D2CCFA46300EBF51D /* ViewControllers */,
-				97F156A12CCFA46300EBF51D /* Views */,
-			);
-			path = My;
-			sourceTree = "<group>";
-		};
-		97F156A52CCFA46300EBF51D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				97F156A32CCFA46300EBF51D /* SavedTableViewCell.swift */,
-				97F156A42CCFA46300EBF51D /* SavedView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		97F156A72CCFA46300EBF51D /* Saved */ = {
-			isa = PBXGroup;
-			children = (
-				97F156A52CCFA46300EBF51D /* Views */,
-				97F156A62CCFA46300EBF51D /* SavedViewController.swift */,
-			);
-			path = Saved;
-			sourceTree = "<group>";
-		};
-		97F156A92CCFA46300EBF51D /* Shop */ = {
-			isa = PBXGroup;
-			children = (
-				97F156A82CCFA46300EBF51D /* ShopViewController.swift */,
-			);
-			path = Shop;
-			sourceTree = "<group>";
-		};
-		97F156AB2CCFA46300EBF51D /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				97F156AA2CCFA46300EBF51D /* StyleViewController.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		97F156AC2CCFA46300EBF51D /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				97F156972CCFA46300EBF51D /* Home */,
-				97F1569A2CCFA46300EBF51D /* Login */,
-				97F156A22CCFA46300EBF51D /* My */,
-				97F156A72CCFA46300EBF51D /* Saved */,
-				97F156A92CCFA46300EBF51D /* Shop */,
-				97F156AB2CCFA46300EBF51D /* Style */,
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		97F1562F2CCFA18300EBF51D /* Kream_CloneCoding */ = {
+		97BC67442CCFBAD100FEB356 /* Kream_cloneCoding */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97F1565A2CCFA18300EBF51D /* Build configuration list for PBXNativeTarget "Kream_CloneCoding" */;
+			buildConfigurationList = 97BC676F2CCFBAD100FEB356 /* Build configuration list for PBXNativeTarget "Kream_cloneCoding" */;
 			buildPhases = (
-				97F1562C2CCFA18300EBF51D /* Sources */,
-				97F1562D2CCFA18300EBF51D /* Frameworks */,
-				97F1562E2CCFA18300EBF51D /* Resources */,
+				97BC67412CCFBAD100FEB356 /* Sources */,
+				97BC67422CCFBAD100FEB356 /* Frameworks */,
+				97BC67432CCFBAD100FEB356 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Kream_CloneCoding;
+			name = Kream_cloneCoding;
 			packageProductDependencies = (
-				97F1568C2CCFA35100EBF51D /* SnapKit */,
+				97BC67BA2CCFBC0400FEB356 /* SnapKit */,
 			);
-			productName = Kream_CloneCoding;
-			productReference = 97F156302CCFA18300EBF51D /* Kream_CloneCoding.app */;
+			productName = Kream_cloneCoding;
+			productReference = 97BC67452CCFBAD100FEB356 /* Kream_cloneCoding.app */;
 			productType = "com.apple.product-type.application";
 		};
-		97F156452CCFA18300EBF51D /* Kream_CloneCodingTests */ = {
+		97BC675A2CCFBAD100FEB356 /* Kream_cloneCodingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97F1565D2CCFA18300EBF51D /* Build configuration list for PBXNativeTarget "Kream_CloneCodingTests" */;
+			buildConfigurationList = 97BC67722CCFBAD100FEB356 /* Build configuration list for PBXNativeTarget "Kream_cloneCodingTests" */;
 			buildPhases = (
-				97F156422CCFA18300EBF51D /* Sources */,
-				97F156432CCFA18300EBF51D /* Frameworks */,
-				97F156442CCFA18300EBF51D /* Resources */,
+				97BC67572CCFBAD100FEB356 /* Sources */,
+				97BC67582CCFBAD100FEB356 /* Frameworks */,
+				97BC67592CCFBAD100FEB356 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				97F156482CCFA18300EBF51D /* PBXTargetDependency */,
+				97BC675D2CCFBAD100FEB356 /* PBXTargetDependency */,
 			);
-			name = Kream_CloneCodingTests;
-			productName = Kream_CloneCodingTests;
-			productReference = 97F156462CCFA18300EBF51D /* Kream_CloneCodingTests.xctest */;
+			name = Kream_cloneCodingTests;
+			productName = Kream_cloneCodingTests;
+			productReference = 97BC675B2CCFBAD100FEB356 /* Kream_cloneCodingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		97F1564F2CCFA18300EBF51D /* Kream_CloneCodingUITests */ = {
+		97BC67642CCFBAD100FEB356 /* Kream_cloneCodingUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97F156602CCFA18300EBF51D /* Build configuration list for PBXNativeTarget "Kream_CloneCodingUITests" */;
+			buildConfigurationList = 97BC67752CCFBAD100FEB356 /* Build configuration list for PBXNativeTarget "Kream_cloneCodingUITests" */;
 			buildPhases = (
-				97F1564C2CCFA18300EBF51D /* Sources */,
-				97F1564D2CCFA18300EBF51D /* Frameworks */,
-				97F1564E2CCFA18300EBF51D /* Resources */,
+				97BC67612CCFBAD100FEB356 /* Sources */,
+				97BC67622CCFBAD100FEB356 /* Frameworks */,
+				97BC67632CCFBAD100FEB356 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				97F156522CCFA18300EBF51D /* PBXTargetDependency */,
+				97BC67672CCFBAD100FEB356 /* PBXTargetDependency */,
 			);
-			name = Kream_CloneCodingUITests;
-			productName = Kream_CloneCodingUITests;
-			productReference = 97F156502CCFA18300EBF51D /* Kream_CloneCodingUITests.xctest */;
+			name = Kream_cloneCodingUITests;
+			productName = Kream_cloneCodingUITests;
+			productReference = 97BC67652CCFBAD100FEB356 /* Kream_cloneCodingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		97F156282CCFA18300EBF51D /* Project object */ = {
+		97BC673D2CCFBAD100FEB356 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					97F1562F2CCFA18300EBF51D = {
+					97BC67442CCFBAD100FEB356 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					97F156452CCFA18300EBF51D = {
+					97BC675A2CCFBAD100FEB356 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 97F1562F2CCFA18300EBF51D;
+						TestTargetID = 97BC67442CCFBAD100FEB356;
 					};
-					97F1564F2CCFA18300EBF51D = {
+					97BC67642CCFBAD100FEB356 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 97F1562F2CCFA18300EBF51D;
+						TestTargetID = 97BC67442CCFBAD100FEB356;
 					};
 				};
 			};
-			buildConfigurationList = 97F1562B2CCFA18300EBF51D /* Build configuration list for PBXProject "Kream_CloneCoding" */;
+			buildConfigurationList = 97BC67402CCFBAD100FEB356 /* Build configuration list for PBXProject "Kream_cloneCoding" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -347,38 +307,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 97F156272CCFA18300EBF51D;
+			mainGroup = 97BC673C2CCFBAD100FEB356;
 			packageReferences = (
-				97F1568B2CCFA33F00EBF51D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				97BC67B92CCFBC0400FEB356 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
-			productRefGroup = 97F156312CCFA18300EBF51D /* Products */;
+			productRefGroup = 97BC67462CCFBAD100FEB356 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				97F1562F2CCFA18300EBF51D /* Kream_CloneCoding */,
-				97F156452CCFA18300EBF51D /* Kream_CloneCodingTests */,
-				97F1564F2CCFA18300EBF51D /* Kream_CloneCodingUITests */,
+				97BC67442CCFBAD100FEB356 /* Kream_cloneCoding */,
+				97BC675A2CCFBAD100FEB356 /* Kream_cloneCodingTests */,
+				97BC67642CCFBAD100FEB356 /* Kream_cloneCodingUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		97F1562E2CCFA18300EBF51D /* Resources */ = {
+		97BC67432CCFBAD100FEB356 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F156902CCFA44900EBF51D /* Assets.xcassets in Resources */,
+				97BC67CF2CCFBD5100FEB356 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97F156442CCFA18300EBF51D /* Resources */ = {
+		97BC67592CCFBAD100FEB356 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97F1564E2CCFA18300EBF51D /* Resources */ = {
+		97BC67632CCFBAD100FEB356 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,65 +348,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		97F1562C2CCFA18300EBF51D /* Sources */ = {
+		97BC67412CCFBAD100FEB356 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F156AF2CCFA46300EBF51D /* LoginViewController.swift in Sources */,
-				97F156B12CCFA46300EBF51D /* MyPageViewController.swift in Sources */,
-				97F156BB2CCFA4CA00EBF51D /* MainTabBarController.swift in Sources */,
-				97F156B52CCFA46300EBF51D /* SavedTableViewCell.swift in Sources */,
-				97F156B72CCFA46300EBF51D /* SavedViewController.swift in Sources */,
-				97F156AE2CCFA46300EBF51D /* LoginView.swift in Sources */,
-				97F156B22CCFA46300EBF51D /* MyPageTopView.swift in Sources */,
-				97F156AD2CCFA46300EBF51D /* HomeViewController.swift in Sources */,
-				97F156952CCFA45400EBF51D /* UserInfo.swift in Sources */,
-				97F156B32CCFA46300EBF51D /* MyPageView.swift in Sources */,
-				97F156B02CCFA46300EBF51D /* MyPageManageViewController.swift in Sources */,
-				97F156342CCFA18300EBF51D /* AppDelegate.swift in Sources */,
-				97F156B62CCFA46300EBF51D /* SavedView.swift in Sources */,
-				97F156B82CCFA46300EBF51D /* ShopViewController.swift in Sources */,
-				97F156942CCFA45400EBF51D /* SavedProduct.swift in Sources */,
-				97F156B92CCFA46300EBF51D /* StyleViewController.swift in Sources */,
-				97F156B42CCFA46300EBF51D /* ProfileManagerView.swift in Sources */,
-				97F156362CCFA18300EBF51D /* SceneDelegate.swift in Sources */,
+				97BC67972CCFBB5200FEB356 /* SavedTableViewCell.swift in Sources */,
+				97BC67492CCFBAD100FEB356 /* AppDelegate.swift in Sources */,
+				97BC67CD2CCFBD1E00FEB356 /* TabBarViewController.swift in Sources */,
+				97BC67C62CCFBD1E00FEB356 /* ShopViewController.swift in Sources */,
+				97BC67A12CCFBB5200FEB356 /* HomeView.swift in Sources */,
+				97BC67CA2CCFBD1E00FEB356 /* LoginViewController.swift in Sources */,
+				97BC67C72CCFBD1E00FEB356 /* StyleViewController.swift in Sources */,
+				97BC67C92CCFBD1E00FEB356 /* HomeViewController.swift in Sources */,
+				97BC67962CCFBB5200FEB356 /* HomeCategoryCollectionViewCell.swift in Sources */,
+				97BC67A42CCFBB5200FEB356 /* QuickLoginButton.swift in Sources */,
+				97BC67CC2CCFBD1E00FEB356 /* SavedViewController.swift in Sources */,
+				97BC67A32CCFBB5200FEB356 /* MyProfileView.swift in Sources */,
+				97BC67CB2CCFBD1E00FEB356 /* MyProfileViewController.swift in Sources */,
+				97BC677F2CCFBB4A00FEB356 /* LoginModel.swift in Sources */,
+				97BC67A02CCFBB5200FEB356 /* EditMyProfileView.swift in Sources */,
+				97BC67A52CCFBB5200FEB356 /* SavedTableView.swift in Sources */,
+				97BC67A22CCFBB5200FEB356 /* LoginView.swift in Sources */,
+				97BC67802CCFBB4A00FEB356 /* Product.swift in Sources */,
+				97BC677E2CCFBB4A00FEB356 /* HomeCategoryModel.swift in Sources */,
+				97BC67C82CCFBD1E00FEB356 /* EditMyProfileViewController.swift in Sources */,
+				97BC674B2CCFBAD100FEB356 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97F156422CCFA18300EBF51D /* Sources */ = {
+		97BC67572CCFBAD100FEB356 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F1564B2CCFA18300EBF51D /* Kream_CloneCodingTests.swift in Sources */,
+				97BC67602CCFBAD100FEB356 /* Kream_cloneCodingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97F1564C2CCFA18300EBF51D /* Sources */ = {
+		97BC67612CCFBAD100FEB356 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F156552CCFA18300EBF51D /* Kream_CloneCodingUITests.swift in Sources */,
-				97F156572CCFA18300EBF51D /* Kream_CloneCodingUITestsLaunchTests.swift in Sources */,
+				97BC676A2CCFBAD100FEB356 /* Kream_cloneCodingUITests.swift in Sources */,
+				97BC676C2CCFBAD100FEB356 /* Kream_cloneCodingUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		97F156482CCFA18300EBF51D /* PBXTargetDependency */ = {
+		97BC675D2CCFBAD100FEB356 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 97F1562F2CCFA18300EBF51D /* Kream_CloneCoding */;
-			targetProxy = 97F156472CCFA18300EBF51D /* PBXContainerItemProxy */;
+			target = 97BC67442CCFBAD100FEB356 /* Kream_cloneCoding */;
+			targetProxy = 97BC675C2CCFBAD100FEB356 /* PBXContainerItemProxy */;
 		};
-		97F156522CCFA18300EBF51D /* PBXTargetDependency */ = {
+		97BC67672CCFBAD100FEB356 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 97F1562F2CCFA18300EBF51D /* Kream_CloneCoding */;
-			targetProxy = 97F156512CCFA18300EBF51D /* PBXContainerItemProxy */;
+			target = 97BC67442CCFBAD100FEB356 /* Kream_cloneCoding */;
+			targetProxy = 97BC67662CCFBAD100FEB356 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		97F156582CCFA18300EBF51D /* Debug */ = {
+		97BC676D2CCFBAD100FEB356 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -509,7 +472,7 @@
 			};
 			name = Debug;
 		};
-		97F156592CCFA18300EBF51D /* Release */ = {
+		97BC676E2CCFBAD100FEB356 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -565,7 +528,7 @@
 			};
 			name = Release;
 		};
-		97F1565B2CCFA18300EBF51D /* Debug */ = {
+		97BC67702CCFBAD100FEB356 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -573,7 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Kream_CloneCoding/Info.plist;
+				INFOPLIST_FILE = Kream_cloneCoding/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -583,7 +546,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCoding";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-cloneCoding";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -591,7 +554,7 @@
 			};
 			name = Debug;
 		};
-		97F1565C2CCFA18300EBF51D /* Release */ = {
+		97BC67712CCFBAD100FEB356 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -599,7 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Kream_CloneCoding/Info.plist;
+				INFOPLIST_FILE = Kream_cloneCoding/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -609,7 +572,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCoding";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-cloneCoding";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -617,7 +580,7 @@
 			};
 			name = Release;
 		};
-		97F1565E2CCFA18300EBF51D /* Debug */ = {
+		97BC67732CCFBAD100FEB356 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -627,16 +590,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCodingTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-cloneCodingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kream_CloneCoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kream_CloneCoding";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kream_cloneCoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kream_cloneCoding";
 			};
 			name = Debug;
 		};
-		97F1565F2CCFA18300EBF51D /* Release */ = {
+		97BC67742CCFBAD100FEB356 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -646,16 +609,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCodingTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-cloneCodingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kream_CloneCoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kream_CloneCoding";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kream_cloneCoding.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kream_cloneCoding";
 			};
 			name = Release;
 		};
-		97F156612CCFA18300EBF51D /* Debug */ = {
+		97BC67762CCFBAD100FEB356 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -663,16 +626,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCodingUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-cloneCodingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Kream_CloneCoding;
+				TEST_TARGET_NAME = Kream_cloneCoding;
 			};
 			name = Debug;
 		};
-		97F156622CCFA18300EBF51D /* Release */ = {
+		97BC67772CCFBAD100FEB356 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -680,50 +643,50 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-CloneCodingUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "UMC7th-iOS.Kream-cloneCodingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Kream_CloneCoding;
+				TEST_TARGET_NAME = Kream_cloneCoding;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		97F1562B2CCFA18300EBF51D /* Build configuration list for PBXProject "Kream_CloneCoding" */ = {
+		97BC67402CCFBAD100FEB356 /* Build configuration list for PBXProject "Kream_cloneCoding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97F156582CCFA18300EBF51D /* Debug */,
-				97F156592CCFA18300EBF51D /* Release */,
+				97BC676D2CCFBAD100FEB356 /* Debug */,
+				97BC676E2CCFBAD100FEB356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97F1565A2CCFA18300EBF51D /* Build configuration list for PBXNativeTarget "Kream_CloneCoding" */ = {
+		97BC676F2CCFBAD100FEB356 /* Build configuration list for PBXNativeTarget "Kream_cloneCoding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97F1565B2CCFA18300EBF51D /* Debug */,
-				97F1565C2CCFA18300EBF51D /* Release */,
+				97BC67702CCFBAD100FEB356 /* Debug */,
+				97BC67712CCFBAD100FEB356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97F1565D2CCFA18300EBF51D /* Build configuration list for PBXNativeTarget "Kream_CloneCodingTests" */ = {
+		97BC67722CCFBAD100FEB356 /* Build configuration list for PBXNativeTarget "Kream_cloneCodingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97F1565E2CCFA18300EBF51D /* Debug */,
-				97F1565F2CCFA18300EBF51D /* Release */,
+				97BC67732CCFBAD100FEB356 /* Debug */,
+				97BC67742CCFBAD100FEB356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97F156602CCFA18300EBF51D /* Build configuration list for PBXNativeTarget "Kream_CloneCodingUITests" */ = {
+		97BC67752CCFBAD100FEB356 /* Build configuration list for PBXNativeTarget "Kream_cloneCodingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97F156612CCFA18300EBF51D /* Debug */,
-				97F156622CCFA18300EBF51D /* Release */,
+				97BC67762CCFBAD100FEB356 /* Debug */,
+				97BC67772CCFBAD100FEB356 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -731,7 +694,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		97F1568B2CCFA33F00EBF51D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		97BC67B92CCFBC0400FEB356 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -742,12 +705,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		97F1568C2CCFA35100EBF51D /* SnapKit */ = {
+		97BC67BA2CCFBC0400FEB356 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 97F1568B2CCFA33F00EBF51D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 97BC67B92CCFBC0400FEB356 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 97F156282CCFA18300EBF51D /* Project object */;
+	rootObject = 97BC673D2CCFBAD100FEB356 /* Project object */;
 }
