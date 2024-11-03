@@ -29,8 +29,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate {
     // 선택된 세그먼트에 맞춰 underLineView의 위치를 애니메이션으로 이동
     @objc
     private func changeSegmentedControlLineView(_ segment: UISegmentedControl) {
-        let selectedSegmentIndex = homeView.segmentedControl.selectedSegmentIndex                 // 세그먼트의 인덱스값 가져옴
-        let selectedSegmentFrame = homeView.segmentedControl.subviews[selectedSegmentIndex].frame // 선택된 세그먼트의 프레임 가져옴
+        let selectedSegmentIndex = homeView.segmentedControl.selectedSegmentIndex                    // 세그먼트의 인덱스값 가져옴
+        let selectedSegmentFrame = homeView.segmentedControl.subviews[selectedSegmentIndex].frame    // 선택된 세그먼트의 프레임 가져옴
                 
         // 세그먼트의 텍스트 가져오기
         let segmentTitle = homeView.segmentedControl.titleForSegment(at: selectedSegmentIndex) ?? ""
@@ -56,7 +56,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegate {
             self.homeView.layoutIfNeeded() // 레이아웃 업데이트
         })
     }
-    
 }
 
 extension HomeViewController: UICollectionViewDataSource {

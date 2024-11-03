@@ -39,6 +39,5 @@ extension SavedViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(with: item)
         return cell
     }
-    
 }
 

@@ -13,7 +13,7 @@ class HomeView: UIView {
     //MARK: - Top Area : Search & Notification
     private var topViewContainer: UIView = {
         let view = UIView()
-        //view.backgroundColor = .yellow
+        
         return view
     }()
     
@@ -43,11 +43,6 @@ class HomeView: UIView {
     let segmentedControl: UISegmentedControl = {
         let segment = UISegmentedControl(items: ["추천", "랭킹", "발매정보", "럭셔리", "남성", "여성"])
         
-//        // 텍스트 스타일 설정
-//        let paragraphStyle = NSMutableParagraphStyle()
-//        paragraphStyle.lineSpacing = 8 // 원하는 줄 간격 설정
-//        paragraphStyle.alignment = .center // 텍스트 정렬 설정
-        
         // 배경과 구분선 이미지 제거
         segment.setBackgroundImage(UIImage(), for: .normal, barMetrics: .default)
         segment.setBackgroundImage(UIImage(), for: .selected, barMetrics: .default)
@@ -70,9 +65,6 @@ class HomeView: UIView {
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16, weight: .bold), 
         ], for: .selected
         )
-        
-        // 텍스트 속성 간의 간격 조절
-        
         
         return segment
     }()
@@ -126,6 +118,7 @@ class HomeView: UIView {
         self.addComponents()
     }
     
+    // MARK: Function
     private func addComponents() {
         self.addSubview(topViewContainer)
         topViewContainer.addSubview(searchBarButton)

@@ -57,8 +57,10 @@ class LoginView: UIView {
         textField.layer.cornerRadius = 15
         textField.font = .systemFont(ofSize: 15)
         
+        // x: 왼쪽 시작 지점,  y: textField 위치를 위로 약간 이동
+        // width: 여백의 너비
         let paddingView = UIView(frame: CGRect(x: 0, y: -20, width: 20, height: textField.frame.height))
-        textField.leftView = paddingView
+        textField.leftView = paddingView    // textField의 왼쪽에 paddingView 추가
         textField.leftViewMode = .always
         
         return textField
@@ -124,6 +126,9 @@ class LoginView: UIView {
         button.layer.cornerRadius = 15
         
         button.contentHorizontalAlignment = .center
+        
+        // contentEdgeInsets : 버튼의 전체 콘텐츠를 둘러싼 여백 (텍스트와 이미지)
+        // imageEdgeInsets: 버튼 안에서 이미지의 위치를 조정 => 텍스트와 이미지 사이의 값을 조정
         button.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -100, bottom: 0, right: 0)
         

@@ -128,10 +128,12 @@ class MyProfileView: UIView {
         mainInfoView.addSubview(settingButton)
         mainInfoView.addSubview(cameraButton)
         mainInfoView.addSubview(infoSubView)
+        
         infoSubView.addSubview(profileImage)
         infoSubView.addSubview(userNicknameLabel)
         infoSubView.addSubview(followerLabel)
         infoSubView.addSubview(followingLabel)
+        
         mainInfoView.addSubview(editProfileButton)
         mainInfoView.addSubview(shareProfileButton)
         
