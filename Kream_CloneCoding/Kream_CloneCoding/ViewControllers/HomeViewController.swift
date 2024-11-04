@@ -4,8 +4,15 @@ import SnapKit
 
 class HomeViewController: UIViewController, UICollectionViewDelegate {
     
-    
-    let homeView = HomeView()
+    private lazy var homeView: HomeView = {
+        let view = HomeView()
+        
+        view.categoryCollectionView.tag = 1
+        view.justDroppedCollectionView.tag = 2
+        view.challengeCollectionView.tag = 3
+        
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +29,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate {
     }
     
     private func setUpDelete() {
-        homeView.collectionView.delegate = self
-        homeView.collectionView.dataSource = self
+        homeView.categoryCollectionView.delegate = self
+        homeView.categoryCollectionView.dataSource = self
+        
+        homeView.justDroppedCollectionView.delegate = self
+        homeView.justDroppedCollectionView.dataSource = self
+        
+        homeView.challengeCollectionView.delegate = self
+        homeView.challengeCollectionView.dataSource = self
+
     }
     
     // 선택된 세그먼트에 맞춰 underLineView의 위치를 애니메이션으로 이동
@@ -60,18 +74,50 @@ class HomeViewController: UIViewController, UICollectionViewDelegate {
 
 extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return HomeCategoryModel.data.count
+        if collectionView.tag == 1 {
+            return HomeCategoryModel.data.count
+        }
+        if collectionView.tag == 2 {
+            return HomeJustDroppedModel.data.count
+        }
+        if collectionView.tag == 3 {
+            return HomeChallengeModel.data.count
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: HomeCategoryCollectionViewCell.identifier, for: indexPath) as? HomeCategoryCollectionViewCell
-        else {
-            return UICollectionViewCell()
+        if collectionView.tag == 1 {
+            guard let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: HomeCategoryCollectionViewCell.identifier, for: indexPath) as? HomeCategoryCollectionViewCell
+            else {
+                return UICollectionViewCell()
+            }
+            let data = HomeCategoryModel.data[indexPath.row]
+            cell.configuration(data: data)
+            return cell
         }
-        let data = HomeCategoryModel.data[indexPath.row]
-        cell.configuration(data: data)
-        return cell
+        else if collectionView.tag == 2 {
+            guard let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: HomeJustDroppedColletionViewCell.identifier, for: indexPath) as? HomeJustDroppedColletionViewCell
+            else {
+                return UICollectionViewCell()
+            }
+            let data = HomeJustDroppedModel.data[indexPath.row]
+            cell.configuration(data: data)
+            return cell
+        }
+        else if collectionView.tag == 3 {
+            guard let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: HomeChallengeCollectionViewCell.identifier, for: indexPath) as? HomeChallengeCollectionViewCell
+            else {
+                return UICollectionViewCell()
+            }
+            let data = HomeChallengeModel.data[indexPath.row]
+            cell.configuration(data: data)
+            return cell
+        }
+        return UICollectionViewCell()
     }
 }
 

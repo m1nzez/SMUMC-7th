@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9778CC702CD0D4A300768218 /* HomeJustDroppedColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778CC6F2CD0D4A300768218 /* HomeJustDroppedColletionViewCell.swift */; };
-		9778CC722CD0D4BB00768218 /* HomeYearEndColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778CC712CD0D4BB00768218 /* HomeYearEndColletionViewCell.swift */; };
+		9778CC722CD0D4BB00768218 /* HomeChallengeColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778CC712CD0D4BB00768218 /* HomeChallengeColletionViewCell.swift */; };
 		9778CC752CD0D5A600768218 /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778CC742CD0D5A600768218 /* SavedTableViewCell.swift */; };
-		9778CC772CD0D63D00768218 /* HomeScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778CC762CD0D63D00768218 /* HomeScrollView.swift */; };
 		9778CCD92CD710D400768218 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778CCD82CD710D400768218 /* HomeModel.swift */; };
 		97BC67492CCFBAD100FEB356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC67482CCFBAD100FEB356 /* AppDelegate.swift */; };
 		97BC674B2CCFBAD100FEB356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC674A2CCFBAD100FEB356 /* SceneDelegate.swift */; };
@@ -57,9 +56,8 @@
 
 /* Begin PBXFileReference section */
 		9778CC6F2CD0D4A300768218 /* HomeJustDroppedColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeJustDroppedColletionViewCell.swift; sourceTree = "<group>"; };
-		9778CC712CD0D4BB00768218 /* HomeYearEndColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeYearEndColletionViewCell.swift; sourceTree = "<group>"; };
+		9778CC712CD0D4BB00768218 /* HomeChallengeColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChallengeColletionViewCell.swift; sourceTree = "<group>"; };
 		9778CC742CD0D5A600768218 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
-		9778CC762CD0D63D00768218 /* HomeScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScrollView.swift; sourceTree = "<group>"; };
 		9778CCD82CD710D400768218 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		97BC67452CCFBAD100FEB356 /* Kream_cloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kream_cloneCoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BC67482CCFBAD100FEB356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,11 +117,10 @@
 		9778CC732CD0D52D00768218 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9778CC762CD0D63D00768218 /* HomeScrollView.swift */,
 				97BC678F2CCFBB5200FEB356 /* HomeView.swift */,
 				97BC67812CCFBB5200FEB356 /* HomeCategoryCollectionViewCell.swift */,
 				9778CC6F2CD0D4A300768218 /* HomeJustDroppedColletionViewCell.swift */,
-				9778CC712CD0D4BB00768218 /* HomeYearEndColletionViewCell.swift */,
+				9778CC712CD0D4BB00768218 /* HomeChallengeColletionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -366,12 +363,11 @@
 				97BC67C62CCFBD1E00FEB356 /* ShopViewController.swift in Sources */,
 				97BC67A12CCFBB5200FEB356 /* HomeView.swift in Sources */,
 				97BC67CA2CCFBD1E00FEB356 /* LoginViewController.swift in Sources */,
-				9778CC722CD0D4BB00768218 /* HomeYearEndColletionViewCell.swift in Sources */,
+				9778CC722CD0D4BB00768218 /* HomeChallengeColletionViewCell.swift in Sources */,
 				97BC67C72CCFBD1E00FEB356 /* StyleViewController.swift in Sources */,
 				97BC67C92CCFBD1E00FEB356 /* HomeViewController.swift in Sources */,
 				9778CC752CD0D5A600768218 /* SavedTableViewCell.swift in Sources */,
 				97BC67962CCFBB5200FEB356 /* HomeCategoryCollectionViewCell.swift in Sources */,
-				9778CC772CD0D63D00768218 /* HomeScrollView.swift in Sources */,
 				97BC67A42CCFBB5200FEB356 /* QuickLoginButton.swift in Sources */,
 				97BC67CC2CCFBD1E00FEB356 /* SavedViewController.swift in Sources */,
 				97BC67A32CCFBB5200FEB356 /* MyProfileView.swift in Sources */,

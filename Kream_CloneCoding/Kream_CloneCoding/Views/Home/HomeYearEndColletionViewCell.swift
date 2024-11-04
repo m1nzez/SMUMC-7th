@@ -7,6 +7,8 @@
 
 import UIKit
 
-class HomeYearEndColletionViewCell: UICollectionViewCell {
+class HomeChallengeColletionViewCell: UICollectionViewCell {
     
+    static let identifier = "challengeIdentifier"
+
 }

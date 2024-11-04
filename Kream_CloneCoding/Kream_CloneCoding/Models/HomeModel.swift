@@ -22,6 +22,7 @@ struct HomeJustDroppedModel {
 
 struct HomeChallengeModel {
     let image: UIImage?
+    let id : String
 }
 
 extension HomeCategoryModel {
@@ -42,19 +43,19 @@ extension HomeCategoryModel {
 extension HomeJustDroppedModel {
     static let data: [HomeJustDroppedModel] = [
         HomeJustDroppedModel(image: UIImage(named: "JustDropped Image 0"), brand: "MLB",
-                             productName: "정키라이너 뉴욕양키스", productPrice: "139,000", dealPrice: "139,000"),
+                             productName: "정키라이너 뉴욕양키스", productPrice: "139,000", dealPrice: "12.8만"),
         HomeJustDroppedModel(image: UIImage(named: "JustDropped Image 1"), brand: "Jordan",
-                             productName: "Jordan 1 Retro High OG Yellow Ochre", productPrice: "139,000", dealPrice: "228,000"),
+                             productName: "Jordan 1 Retro High OG Yellow Ochre", productPrice: "139,000", dealPrice: "15.6만"),
         HomeJustDroppedModel(image: UIImage(named: "JustDropped Image 2"), brand: "Human Made",
-                             productName: "Human Made x Kaws Varsity Jacket #1 Black", productPrice: "139,000", dealPrice: "2,000,000")
+                             productName: "Human Made x Kaws Varsity Jacket #1 Black", productPrice: "139,000", dealPrice: "230.6만")
     ]
 }
 
 extension HomeChallengeModel {
     static let data: [HomeChallengeModel] = [
-        HomeChallengeModel(image: UIImage(named: "Challenge Image 0")),
-        HomeChallengeModel(image: UIImage(named: "Challenge Image 1")),
-        HomeChallengeModel(image: UIImage(named: "Challenge Image 2")),
+        HomeChallengeModel(image: UIImage(named: "Challenge Image 0"), id: "@katarinabluu"),
+        HomeChallengeModel(image: UIImage(named: "Challenge Image 1"), id: "@imwinter"),
+        HomeChallengeModel(image: UIImage(named: "Challenge Image 2"), id: "@thousand_woo"),
     ]
 }
 
