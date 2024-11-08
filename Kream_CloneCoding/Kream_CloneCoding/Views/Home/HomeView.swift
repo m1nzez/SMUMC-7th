@@ -248,8 +248,8 @@ class HomeView: UIView {
         }
         
         underLineView.snp.makeConstraints { make in
-            make.top.lessThanOrEqualTo(segmentedControl.snp.bottom).offset(8)
-            make.leading.equalTo(segmentedControl.snp.leading).offset(8) // segmentedControl 기준으로 설정
+            make.top.lessThanOrEqualTo(segmentedControl.snp.bottom).offset(6)
+            make.leading.equalTo(segmentedControl.snp.leading).offset(10) // segmentedControl 기준으로 설정
             make.width.equalTo(28) // 초기 width 값 설정
             make.height.lessThanOrEqualTo(2)
         }

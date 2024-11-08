@@ -4,6 +4,9 @@ import SnapKit
 
 class HomeViewController: UIViewController, UICollectionViewDelegate {
     
+    private var savedStates = [Bool](repeating: false, count: HomeJustDroppedModel.data.count)
+
+    
     private lazy var homeView: HomeView = {
         let view = HomeView()
         
@@ -21,6 +24,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate {
         setupAction()
         setUpDelete()
     }
+
     
     // 세그먼트에 대한 값 설정
     private func setupAction() {
@@ -104,7 +108,9 @@ extension HomeViewController: UICollectionViewDataSource {
                 return UICollectionViewCell()
             }
             let data = HomeJustDroppedModel.data[indexPath.row]
-            cell.configuration(data: data)
+            let isTouched = savedStates[indexPath.row] // 셀의 저장된 상태 가져오기
+            cell.configuration(data: data, isTouched: isTouched) // 데이터와 상태를 함께 전달
+                    
             return cell
         }
         else if collectionView.tag == 3 {
@@ -118,6 +124,18 @@ extension HomeViewController: UICollectionViewDataSource {
             return cell
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.tag == 2 {
+            // 저장 상태를 반전
+            savedStates[indexPath.row].toggle()
+            
+            if let cell = collectionView.cellForItem(at: indexPath) as? HomeJustDroppedColletionViewCell {
+                let imageName = savedStates[indexPath.row] ? "bookmark.fill" : "bookmark"
+                cell.savedButton.setImage(UIImage(named: imageName), for: .normal)
+            }
+        }
     }
 }
 

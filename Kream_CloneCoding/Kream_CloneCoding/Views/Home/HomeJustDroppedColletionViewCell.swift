@@ -19,6 +19,38 @@ class HomeJustDroppedColletionViewCell: UICollectionViewCell {
         return image
     }()
     
+    public lazy var savedButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "bookmark"), for: .normal)
+        button.tintColor = .black
+        
+        return button
+    }()
+    
+    var isTouched: Bool? {
+        didSet {
+            if isTouched == true {
+                savedButton.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+            }
+            else{
+                savedButton.setImage(UIImage(systemName: "bookmark"), for: .normal)
+            }
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    
+    let dealPriceLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 10, weight: .light)
+        label.textAlignment = .center
+        label.textColor = .black
+        return label
+    }()
+    
     let brandLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 12, weight: .bold)
@@ -48,9 +80,11 @@ class HomeJustDroppedColletionViewCell: UICollectionViewCell {
         return description
     }()
     
-    let dealPriceLabel: UILabel = {
+    let buyRightNowLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 11.5, weight: .light)
+        label.font = .systemFont(ofSize: 10, weight: .light)
+        label.text = "즉시 구매가"
+        label.textColor = .lightGray
         label.textAlignment = .center
         return label
     }()
@@ -63,15 +97,32 @@ class HomeJustDroppedColletionViewCell: UICollectionViewCell {
     
     private func addComponents() {
         addSubview(imageView)
+        addSubview(dealPriceLabel)
+        addSubview(savedButton)
+        self.bringSubviewToFront(dealPriceLabel)
+        self.bringSubviewToFront(savedButton)
+        
         addSubview(brandLabel)
         addSubview(productLabel)
         addSubview(priceLabel)
         addSubview(pricedescriptionLabel)
-        addSubview(dealPriceLabel)
+        addSubview(buyRightNowLabel)
         
         imageView.snp.makeConstraints { make in
             make.top.leading.trailing.equalToSuperview()
             make.width.height.equalTo(142)
+        }
+        
+        dealPriceLabel.snp.makeConstraints { make in
+            make.top.equalTo(imageView.snp.top).offset(8)
+            make.trailing.equalTo(imageView.snp.trailing).inset(8)
+        }
+        
+        savedButton.snp.makeConstraints { make in
+            make.bottom.equalTo(imageView.snp.bottom).inset(10)
+            make.trailing.equalTo(imageView.snp.trailing).inset(10)
+            make.width.lessThanOrEqualTo(20)
+            make.height.lessThanOrEqualTo(22)
         }
         
         brandLabel.snp.makeConstraints { make in
@@ -91,7 +142,7 @@ class HomeJustDroppedColletionViewCell: UICollectionViewCell {
             make.height.equalTo(16)
         }
         
-        pricedescriptionLabel.snp.makeConstraints { make in
+        buyRightNowLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(4)
             make.top.lessThanOrEqualTo(priceLabel.snp.bottom).offset(2)
             make.bottom.equalToSuperview()
@@ -102,11 +153,14 @@ class HomeJustDroppedColletionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func configuration(data: HomeJustDroppedModel) {
+    public func configuration(data: HomeJustDroppedModel, isTouched: Bool) {
         imageView.image = data.image
         brandLabel.text = data.brand
         productLabel.text = data.productName
         priceLabel.text = data.productPrice
-        pricedescriptionLabel.text = data.dealPrice
+        dealPriceLabel.text = "거래 \(data.dealPrice)"
+        
+        self.isTouched = isTouched
+
     }
 }
