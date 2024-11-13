@@ -18,7 +18,7 @@ struct SignupResponse: Decodable {
     let isSuccess : Bool
     let code : String
     let message : String
-    let result : SignupResult
+    let result : SignupResult?
 }
 
 struct SignupResult: Codable {
@@ -26,12 +26,6 @@ struct SignupResult: Codable {
     let email : String
     let nickname : String
     let authType : String
-}
-
-struct ErrorResponse: Decodable {
-    let isSuccess: Bool
-    let code: String
-    let message: String
 }
 
 
@@ -50,7 +44,7 @@ struct LoginResponse: Decodable {
     let isSuccess : Bool
     let code: String
     let message : String
-    let result: LoginResult
+    let result: LoginResult?
 }
 
 struct LoginResult: Codable {
@@ -58,4 +52,10 @@ struct LoginResult: Codable {
     let refreshToken: String
 }
 
+struct LogoutResponse: Decodable {
+    let isSuccess : Bool
+    let code : String
+    let message : String
+    let result : String
+}
 

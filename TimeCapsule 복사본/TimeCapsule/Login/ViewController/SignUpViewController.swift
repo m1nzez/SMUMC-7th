@@ -16,9 +16,7 @@ class SignUpViewController: UIViewController {
     var name: String = ""
     var nickname: String = ""
     var password: String = ""
-    
-    var userInfo: ((UserInfo) -> Void)?     // 데이터 전달
-    
+        
     // 유효성검사를 위한 property
     var isValidEmail = false
     var isValidNickname = false
@@ -79,14 +77,7 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    // 에러처리 날때 오류 메시지 출력 및 border 색 변경
-    private func errorUpdateUI(for textField: UITextField, errorLabel: UILabel, message: String, isValid: Bool) {
-        errorLabel.text = isValid ? "" : message
-        textField.layer.borderColor = isValid ? UIColor.clear.cgColor : UIColor.red.cgColor
-        textField.layer.borderWidth = isValid ? 0 : 0.4
-        
-        shakeTextField(textField: textField)
-    }
+
     
     
     // MARK: Feature Functions
@@ -110,14 +101,22 @@ class SignUpViewController: UIViewController {
         }
         
         // 에러 메시지 업데이트
-        errorUpdateUI(for: signupView.emailTextField, errorLabel: signupView.emailErrorLabel,
-                      message: "올바른 이메일 형식이 아닙니다.\n예: example@domain.com", isValid: isValidEmail)
-        errorUpdateUI(for: signupView.nicknameTextField, errorLabel: signupView.nicknameErrorLabel,
-                      message: "2자 이상의 닉네임을 입력해주세요.", isValid: isValidNickname)
-        errorUpdateUI(for: signupView.passwordTextField, errorLabel: signupView.passwordErrorLabel,
-                      message: "영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.", isValid: isValidPassword)
-        errorUpdateUI(for: signupView.passwordRepeatTextField, errorLabel: signupView.passwordRepeatErrorLabel,
-                      message: "비밀번호가 일치하지 않습니다.", isValid: isPasswordMatching)
+        errorUpdateUI(for: signupView.emailTextField,
+                      errorLabel: signupView.emailErrorLabel,
+                      message: "올바른 이메일 형식이 아닙니다.\n예: example@domain.com",
+                      isValid: isValidEmail)
+        errorUpdateUI(for: signupView.nicknameTextField,
+                      errorLabel: signupView.nicknameErrorLabel,
+                      message: "2자 이상의 닉네임을 입력해주세요.",
+                      isValid: isValidNickname)
+        errorUpdateUI(for: signupView.passwordTextField,
+                      errorLabel: signupView.passwordErrorLabel,
+                      message: "영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.",
+                      isValid: isValidPassword)
+        errorUpdateUI(for: signupView.passwordRepeatTextField,
+                      errorLabel: signupView.passwordRepeatErrorLabel,
+                      message: "비밀번호가 일치하지 않습니다.",
+                      isValid: isPasswordMatching)
     }
     
     private func isValidEmailFormat(_ email: String) -> Bool {
@@ -130,29 +129,6 @@ class SignUpViewController: UIViewController {
         let passwordRegEx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d$@$!%*?&]{8,}$"
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordRegEx)
         return passwordTest.evaluate(with: password)
-    }
-    
-    // TextField 흔들기 애니메이션
-    private func shakeTextField(textField: UITextField) {
-        let originalPosition = textField.frame.origin // 원래 위치 저장
-
-        UIView.animate(withDuration: 0.2, animations: {
-            textField.frame.origin.x -= 5
-            textField.frame.origin.y -= 5
-        }, completion: { _ in
-            UIView.animate(withDuration: 0.2, animations: {
-                textField.frame.origin.x += 5
-                textField.frame.origin.y += 5
-             }, completion: { _ in
-                 UIView.animate(withDuration: 0.2, animations: {
-                    textField.frame.origin.x -= 5
-                    textField.frame.origin.y -= 5
-                 }, completion: { _ in
-                     // 애니메이션 종료 후 원래 위치로 복원
-                     textField.frame.origin = originalPosition
-                 })
-             })
-        })
     }
     
     
@@ -168,8 +144,10 @@ class SignUpViewController: UIViewController {
                     
                     self.dismiss(animated: true, completion: nil)   // 서버 전송 성공했으니깐 로그인 화면으로 돌아가
                 } else {
-                    // 서버 응답에 따른 오류 메시지 처리
+                    // 이미 존재하는 이메일인 경우 서버 응답에 따른 오류 메시지 처리
+                    self.isValidEmail = false // isValidEmail을 false로 설정해 강제로 UI업데이트
                     self.handleErrorMessage(signupResponse.message)
+                    print("\(signupResponse.message)")
                 }
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
@@ -177,11 +155,14 @@ class SignUpViewController: UIViewController {
         }
     }
     
+    // 회원가입시 이미 존재하는 이메일인 경우
     private func handleErrorMessage(_ message: String) {
         switch message {
         case "이미 존재하는 이메일입니다.":
-            errorUpdateUI(for: signupView.emailTextField, errorLabel: signupView.emailErrorLabel,
-                          message: "이미 존재하는 이메일입니다", isValid: isValidEmail)
+            errorUpdateUI(for: signupView.emailTextField,
+                          errorLabel: signupView.emailErrorLabel,
+                          message: "이미 존재하는 이메일입니다",
+                          isValid: isValidEmail)
         default:
             print("Unknown error occurred: \(message)")
         }
