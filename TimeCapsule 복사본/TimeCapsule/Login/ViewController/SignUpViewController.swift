@@ -77,8 +77,6 @@ class SignUpViewController: UIViewController {
         }
     }
     
-
-    
     
     // MARK: Feature Functions
     private func validateUserInfo() {

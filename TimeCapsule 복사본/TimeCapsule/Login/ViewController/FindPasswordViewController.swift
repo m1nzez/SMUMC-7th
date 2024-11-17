@@ -107,7 +107,7 @@ class FindPasswordViewController: UIViewController {
         guard let vertifyCode = findPasswordView.vertifyCodeTextField.text, !vertifyCode.isEmpty else {
             errorUpdateUI(for: findPasswordView.vertifyCodeTextField,
                           errorLabel: findPasswordView.vertifyCodeErrorLabel,
-                          message: "",
+                          message: "인증번호가 올바른지 확인하세요",
                           isValid: isValidVertifyCode)
             return
         }
@@ -120,9 +120,14 @@ class FindPasswordViewController: UIViewController {
             case .success(let verifyResponse):
                 if verifyResponse.isSuccess {
                     print("Successfully verified")
+                    
+                    // 인증 성공시 비밀번호 변경 화면으로 넘어감 :
                     let changePwdVC = ChangePasswordViewController()
+                    
+                    changePwdVC.email = self.email  // eamil에 대한 데이터값도 전달
                     changePwdVC.modalPresentationStyle = .fullScreen
                     self.present(changePwdVC, animated: true)
+                    
                 } else {
                     print("Failed to verify: \(verifyResponse.message)")
                 }
