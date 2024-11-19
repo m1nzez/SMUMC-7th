@@ -68,22 +68,15 @@ class MyPageViewController: UIViewController {
     
     
     // MARK: Actions
-    @objc func customBackButtonTapped() {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    
     @objc func editInfoButtonTapped() {
         let editNicknameVC = EditNicknameViewController()
-        editNicknameVC.modalPresentationStyle = .fullScreen
-        present(editNicknameVC, animated: true)
+        navigationController?.pushViewController(editNicknameVC, animated: true)
     }
     
     
     @objc func changePwdButtonTapped() {
-        let changePasswordVC = ChangePasswordViewController()
-        changePasswordVC.modalPresentationStyle = .fullScreen
-        present(changePasswordVC, animated: true)
+        let changePasswordVC = PasswordChangeViewController()
+        navigationController?.pushViewController(changePasswordVC, animated: true)
     }
     
     @objc
@@ -105,8 +98,6 @@ class MyPageViewController: UIViewController {
                             sceneDelegate.window?.rootViewController = LoginViewController()
                         }
                     }
-                             
-                            
                 } else {
                     print("Failed to logged out : \(response.message)")
                 }
@@ -119,7 +110,7 @@ class MyPageViewController: UIViewController {
     @objc func withdrawButtonTapped() {
         guard let token = KeychainService.load(for: "RefreshToken") else { return }
         
-        APIClient.patchRequest(endpoint: "/users", token: token) { (result :  Result<DeleteUserResponse, AFError>) in
+        APIClient.patchRequestWithoutParameters(endpoint: "/users", token: token) { (result :  Result<DeleteUserResponse, AFError>) in
             switch result {
             case .success(let response):
                 if response.isSuccess {

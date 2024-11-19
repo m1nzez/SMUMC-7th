@@ -157,7 +157,7 @@ class MyPageView: UIView {
             make.top.lessThanOrEqualTo(userInfoUnderLineView.snp.bottom).offset(24)
             make.width.lessThanOrEqualTo(201)
             make.height.lessThanOrEqualTo(163)
-            make.leading.trailing.equalToSuperview().inset(35)
+            make.leading.trailing.equalToSuperview().inset(55)
         }
         
     }

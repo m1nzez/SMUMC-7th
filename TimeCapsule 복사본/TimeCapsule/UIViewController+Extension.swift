@@ -46,18 +46,45 @@ extension UIViewController {
         })
     }
     
+    // MARK: 네비게이션 바 설정
+    func setupNavigationBarBackgroundColor() {
+        // 네비게이션 바의 배경색을 설정
+        navigationController?.navigationBar.barTintColor = UIColor(named: "Gray2")
+        navigationController?.navigationBar.layer.borderWidth = 0    // 테두리 두께 제거
+        navigationController?.navigationBar.layer.borderColor = UIColor(named: "Gray2")?.cgColor
+        navigationController?.navigationBar.shadowImage = UIImage()  // 스크롤시 네비게이션 바에 그림자가 자동으로 생기기 때문에 그림자도 제거해야함
+
+    }
+    
     func setupNavigationBar(action: Selector) {
         self.navigationItem.hidesBackButton = true
         
-        let backImage = UIImage(systemName: "arrow.backward")
+        let backImage = UIImage(named: "backButtonImage")
         let resizedBackImage = UIGraphicsImageRenderer(size: CGSize(width: 14, height: 26)).image { _ in
             backImage?.draw(in: CGRect(origin: .zero, size: CGSize(width: 14, height: 26)))
         }
         
         let customBackButton = UIBarButtonItem(image: backImage, style: .plain, target: self, action: action)
 
-        customBackButton.tintColor = UIColor(named: "Gray4")
+        customBackButton.tintColor = UIColor(named: "Gray5")
         
         self.navigationItem.leftBarButtonItem = customBackButton
+    }
+    
+    @objc func customBackButtonTapped() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    // MARK: 정규식 표현
+    func isValidEmailFormat(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.com"
+        let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
+    
+    func isValidPasswordFormat(_ password: String) -> Bool {
+        let passwordRegEx = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d$@$!%*?&]{8,}$"
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordRegEx)
+        return passwordTest.evaluate(with: password)
     }
 }

@@ -65,13 +65,13 @@ struct DeleteUserResponse: Decodable {
 // MARK: 비밀번호 변경 모델
 // 로그인화면에서 비밀번호 변경
 struct PasswordChangeRequestinLoginPage: Codable {
-    let eamil: String
+    let email: String
     let password: String
 }
 
 // 마이페이지에서 비밀번호 변경
 struct PasswordChangeRequestinMyPage: Codable {
-    let oldPassword: Int
+    let oldPassword: String
     let newPassword: String
 }
 
@@ -83,3 +83,14 @@ struct PasswordChangeResponse: Decodable {
 }
 
 
+// MARK: 닉네임 변경 모델
+struct NicknameChangeRequest: Codable {
+    let newNickname: String
+}
+
+struct NicknameChangeResponse: Decodable {
+    let isSuccess : Bool
+    let code : String
+    let message : String
+    let result : String?
+}
