@@ -11,6 +11,7 @@ import KakaoSDKAuth
 import FirebaseCore
 import FirebaseMessaging
 import UserNotifications
+import NaverThirdPartyLogin
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,12 +23,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // KakaoSDK 초기화
         KakaoSDK.initSDK(appKey: "9b1e7b9bdb1b03d96a7c7e40c23513fa")
         
+        
+        // 네이버 로그인
+        // 네이버 로그인
+        let instance = NaverThirdPartyLoginConnection.getSharedInstance()
+        instance?.isNaverAppOauthEnable = true
+        instance?.isInAppOauthEnable = true
+        instance?.isOnlyPortraitSupportedInIphone()
+        
+        instance?.serviceUrlScheme = "naverlogin"
+        instance?.consumerKey = "P1wkzbB21bqYt9FUHSik"
+        instance?.consumerSecret = "LSj0ykiOOc"
+        instance?.appName = "TimeCapsule"
+        
         FirebaseApp.configure()
         
         // 앱 실행 시 사용자에게 알림 허용 권한을 받음
         UNUserNotificationCenter.current().delegate = self
-        
-        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound] // 필요한 알림 권한을 설정
+    
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound] // 필요한 알림 권한을 설정s
         UNUserNotificationCenter.current().requestAuthorization(
             options: authOptions,
             completionHandler: { _, _ in }
@@ -40,6 +54,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Messaging.messaging().delegate = self
         
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+            NaverThirdPartyLoginConnection.getSharedInstance()?.application(app, open: url, options: options)
+            return true
     }
     
     // MARK: UISceneSession Lifecycle
@@ -55,16 +74,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+
     
     
 }
-
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
     // 백그라운드에서 푸시 알림을 탭했을 때 실행
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        print("APNS token: \(deviceToken)")
+        //print("APNS token: \(deviceToken)")
         Messaging.messaging().apnsToken = deviceToken
     }
     
@@ -78,13 +97,13 @@ extension AppDelegate: MessagingDelegate {
     
     // 파이어베이스 MessagingDelegate 설정
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-        print("messaging called...")
         if let fcmToken = fcmToken {
-            KeychainService.save(value: fcmToken, for: "FCMToken")
-            print("Firebase registration token: \(String(describing: fcmToken))")
+            KeychainService.save(value: fcmToken, for: "FCMToken") // KeyChain에 FCM토큰 저장
+            // print("Firebase registration token: \(String(describing: fcmToken))")
         }
         
         let dataDict: [String: String] = ["token": fcmToken ?? ""]
+        
         NotificationCenter.default.post(
             name: Notification.Name("FCMToken"),
             object: nil,

@@ -53,12 +53,33 @@ struct LoginResult: Codable {
 }
 
 
+// 인증번호 받기 위한 모델
+struct SendEmailVertifyCodeRequest: Codable {
+    let email: String
+}
+
+struct SendEmailVertifyCodeResponse: Codable {
+    let isSuccess : Bool
+    let code: String
+    let message : String
+    let result: String?
+}
+
+// MARK: 토큰 재발급 모델
+struct ReissueResponse: Decodable {
+    let isSuccess : Bool
+    let code : String
+    let message : String
+    let result: String?
+}
+
+
 // MARK: 로그아웃, 회원탈퇴 모델
 struct DeleteUserResponse: Decodable {
     let isSuccess : Bool
     let code : String
     let message : String
-    let result : String
+    let result : String?
 }
 
 
@@ -93,4 +114,23 @@ struct NicknameChangeResponse: Decodable {
     let code : String
     let message : String
     let result : String?
+}
+
+
+// 토큰 응답 모델
+struct TokenRequest: Encodable  {
+    let accessToken: String
+    let refreshToken: String
+}
+
+struct TokenResponse: Decodable {
+    let isSuccess: Bool
+    let code: String
+    let message: String
+    let result: TokenResult?
+}
+
+struct TokenResult: Decodable {
+    let accessToken: String
+    let refreshToken: String
 }

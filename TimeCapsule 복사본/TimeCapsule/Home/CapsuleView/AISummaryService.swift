@@ -9,32 +9,16 @@ import Alamofire
 
 //no request body
 
-/*Decodable 모델 정의
-{
-  "isSuccess" : true,
-  "code" : 200,
-  "message" : "OK",
-  "result" : "API 응답 String"
-}
-*/
-struct CapsuleAIResponse : Decodable {
-    let isSuccess : Bool
-    let code : Int
-    let message : String
-    let result : String
-    
-}
-
 class AISummaryService {
     let baseurl = "https://api-echo.shop/timecapsules"
-    //let accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5hbGltMDgxOUBnbWFpbC5jb20iLCJyb2xlIjoiIiwiaWF0IjoxNzMxNzY1MDg3LCJleHAiOjE3MzQzNTcwODd9.a1pzijoy94z5iy_QXbfFrWgLO1vIncgQpD4I9_FgXQ8"
-    
+
     func fetchAISummary(for timeCapsuleId: Int, completion: @escaping (Result<CapsuleAIResponse, AFError>) -> Void) {
         
-        let url = "\(baseurl)/\(timeCapsuleId)/ai"
+        let url = "\(baseurl)/{\(timeCapsuleId)}/ai"
+        print("\(url)")
         
         //accesstoken
-        guard let accessToken = KeychainService.load(for: "AccessToken") else {
+        guard let accessToken = KeychainService.load(for: "RefreshToken") else {
             print("Error: No access token found.")
             return
         }
@@ -46,8 +30,7 @@ class AISummaryService {
             "Content-Type": "application/json"
         ]
         
-        //let parameter = 
-        
+
         //요청 보내기
         AF.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseDecodable(of: CapsuleAIResponse.self) { response in
                 // 응답의 HTTP 상태 코드를 확인하여 출력

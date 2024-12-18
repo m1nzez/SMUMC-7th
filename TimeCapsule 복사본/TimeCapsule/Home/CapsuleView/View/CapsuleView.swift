@@ -22,29 +22,49 @@ class CapsuleView: UIView {
     private lazy var capsuleViewBox : UIView = {
         let view = UIView()
         view.layer.cornerRadius = 28
-        view.layer.borderColor = UIColor(named: "FAFAFA")?.cgColor
-        view.layer.borderWidth = 0.2
+        view.backgroundColor = .gray11
         return view
     }()
     
-    private lazy var capsuleContentBox : UIView = {
+    lazy var scrollview : UIScrollView = {
+        let scrollview = UIScrollView()
+        scrollview.showsVerticalScrollIndicator = false
+        scrollview.showsHorizontalScrollIndicator = false
+        scrollview.isScrollEnabled = true
+        scrollview.isPagingEnabled = true
+        scrollview.bounces = true
+        scrollview.layer.cornerRadius = 15
+        return scrollview
+    }()
+    
+    lazy var capsuleContentBox : UIView = {
         let view = UIView()
         view.layer.cornerRadius = 20
-        view.layer.borderColor = UIColor(named: "FAFAFA")?.cgColor
-        view.layer.borderWidth = 0.2
+        view.backgroundColor = .gray2
         return view
+    }()
+    
+    lazy var capsuleExitButton : UIButton = {
+        let button = UIButton()
+        let exitButton = UIImage(named: "exitbutton")
+        button.setImage(exitButton, for: .normal)
+        return button
     }()
     
     lazy var capsuleTitleLabel : UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 20, weight: .bold)
-        label.textColor = UIColor(named: "6CBAFF")
+        label.textColor = UIColor(named: "ThemeColor")
         return label
     }()
     
-    lazy var imageView : UIImageView = {
-        let imageview = UIImageView()
-        return imageview
+    lazy var pageControl : UIPageControl = {
+        let pageControl = UIPageControl()
+        pageControl.currentPage = 0
+        pageControl.pageIndicatorTintColor = .lightGray
+        pageControl.currentPageIndicatorTintColor = .black
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        return pageControl
     }()
     
     lazy var contentScrollView : UIScrollView = {
@@ -56,6 +76,11 @@ class CapsuleView: UIView {
     
     lazy var contentLabel : UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.clipsToBounds = false
+        label.textAlignment = .center
+        label.textColor = .black
         return label
     }()
     
@@ -72,10 +97,12 @@ class CapsuleView: UIView {
     
     private func addComponents(){
         self.addSubview(capsuleViewBox)
+        capsuleViewBox.addSubview(capsuleExitButton)
         capsuleViewBox.addSubview(capsuleContentBox)
         capsuleViewBox.addSubview(AISummaryButton)
+        capsuleViewBox.addSubview(scrollview)
+        capsuleViewBox.addSubview(pageControl)
         capsuleViewBox.addSubview(capsuleTitleLabel)
-        capsuleContentBox.addSubview(imageView)
         capsuleContentBox.addSubview(contentScrollView)
         contentScrollView.addSubview(contentView)
         contentView.addSubview(contentLabel)
@@ -86,6 +113,11 @@ class CapsuleView: UIView {
             make.left.right.equalToSuperview().inset(30)
         }
         
+        capsuleExitButton.snp.makeConstraints{ make in
+            make.top.equalTo(capsuleViewBox.snp.top).offset(7.3)
+            make.leading.equalTo(capsuleViewBox.snp.leading).offset(8.3)
+        }
+        
         capsuleTitleLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(capsuleViewBox.snp.top).offset(11)
@@ -93,31 +125,37 @@ class CapsuleView: UIView {
         }
         
         capsuleContentBox.snp.makeConstraints { make in
-            make.top.equalTo(capsuleTitleLabel.snp.bottom).offset(11)
+            make.top.equalTo(capsuleViewBox.snp.top).offset(46)
             make.bottom.equalTo(capsuleViewBox).inset(56)
             make.left.right.equalTo(capsuleViewBox).inset(8)
             make.centerX.equalToSuperview()
         }
         
-        imageView.snp.makeConstraints { make in
+        pageControl.snp.makeConstraints { make in
+            make.bottom.equalTo(scrollview.snp.bottom).inset(7)
+            make.centerX.equalToSuperview()
+        }
+        
+        scrollview.snp.makeConstraints { make in
             make.top.equalTo(capsuleContentBox.snp.top).offset(38)
-            make.left.right.equalTo(capsuleContentBox).inset(31)
-            make.bottom.equalTo(capsuleContentBox.snp.bottom).inset(310)
+            make.width.height.equalTo(260)
             make.centerX.equalToSuperview()
         }
         
         contentScrollView.snp.makeConstraints{ make in
-            make.top.equalTo(imageView.snp.bottom).offset(40)
+            make.top.equalTo(scrollview.snp.bottom).offset(40)
             make.bottom.equalTo(capsuleContentBox).inset(5)
             make.left.right.equalTo(capsuleContentBox).inset(30)
         }
         
-        contentView.snp.makeConstraints{ make in
+        contentView.snp.makeConstraints { make in
             make.edges.equalTo(contentScrollView)
+            make.width.equalTo(contentScrollView)
         }
         
         contentLabel.snp.makeConstraints { make in
-            make.edges.equalTo(contentView)
+            make.edges.equalToSuperview()
+            make.width.equalToSuperview()
         }
         
         AISummaryButton.snp.makeConstraints { make in
